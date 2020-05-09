@@ -2,6 +2,9 @@
 // The function should return true if every value in the array has it's corresponding value squared in the second array.
 // The frequency of values must be the same.
 
+
+// ******************************* Naïve Solution O(N^2) *******************************
+
 function same(arr1, arr2) {
     if (arr1.length != arr2.length) {
         return false
@@ -17,7 +20,7 @@ function same(arr1, arr2) {
     return true
 }
 
-// Optimized solution O (3N)
+// // ******************************* Optimized Solution O(3N) *******************************
 
 function same(arr1, arr2) {
     if (arr1.length != arr2.length) {
@@ -35,7 +38,7 @@ function same(arr1, arr2) {
         }
     }
 
-    //fill the first array with its freq
+    //fill the second array with its freq
     for (let i = 0; i < arr2.length; i++) {
         if (!arr2Frequency[arr2[i]]) {
             arr2Frequency[arr2[i]] = 1
