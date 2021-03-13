@@ -21,9 +21,9 @@ function sumZero(arr) {
         if (arr[firstPointer] + arr[lastPointer] === 0)
             return [arr[firstPointer],arr[lastPointer]]
         else if (arr[firstPointer] + arr[lastPointer] > 0)
-            lastPointer = lastPointer - 1
+            lastPointer --
         else if (arr[firstPointer] + arr[lastPointer] < 0)
-            firstPointer = firstPointer + 1
+            firstPointer ++
     }   
 }
 
